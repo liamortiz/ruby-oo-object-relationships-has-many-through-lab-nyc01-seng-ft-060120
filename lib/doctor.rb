@@ -23,6 +23,6 @@ class Doctor
     Appointment.all.select{|app| app.doctor == self}
   end
   def patients
-    Appointment.all.map{|app| app.patient}
+    Appointment.all.map{|app| app.patient.name}
   end
 end
