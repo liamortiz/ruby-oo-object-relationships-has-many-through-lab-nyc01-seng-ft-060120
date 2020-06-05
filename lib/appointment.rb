@@ -1,3 +1,4 @@
+require 'pry'
 class Appointment
   attr_reader :date, :patient, :doctor
   @@all = []
@@ -6,6 +7,7 @@ class Appointment
     @date = date
     @patient = patient
     @doctor = doctor
+    
     @@all << self
   end
   def self.all
