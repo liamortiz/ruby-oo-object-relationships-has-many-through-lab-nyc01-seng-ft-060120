@@ -8,7 +8,7 @@ class Appointment
     @patient = patient
     @doctor = doctor
     
-    if patient.class != String
+    if date.class != String
       binding.pry
     end
     
