@@ -1,3 +1,4 @@
+require 'pry'
 class Doctor
   attr_reader :name
   @@all = []
@@ -23,6 +24,8 @@ class Doctor
     Appointment.all.select{|app| app.doctor == self}
   end
   def patients
-    Appointment.all.map{|app| app.patient.name}
+    Appointment.all.map do |app|
+      binding.pry
+    end
   end
 end
