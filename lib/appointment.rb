@@ -8,7 +8,9 @@ class Appointment
     @patient = patient
     @doctor = doctor
     
-    if patient.
+    if patient.class != String
+      binding.pry
+    end
     
     @@all << self
   end
