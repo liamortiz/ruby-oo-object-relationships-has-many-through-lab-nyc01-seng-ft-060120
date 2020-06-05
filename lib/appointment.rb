@@ -8,10 +8,6 @@ class Appointment
     @patient = patient
     @doctor = doctor
     
-    if date.class != String
-      binding.pry
-    end
-    
     @@all << self
   end
   def self.all
