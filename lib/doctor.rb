@@ -25,6 +25,7 @@ class Doctor
   end
   def patients
     appointments.map do |app|
+      binding.pry
       app.patient
     end
   end
