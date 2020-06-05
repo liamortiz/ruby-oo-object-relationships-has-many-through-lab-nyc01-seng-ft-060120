@@ -8,8 +8,6 @@ class Appointment
     @patient = patient.name
     @doctor = doctor.name
     @@all << self
-    
-    binding.pry
   end
   def self.all
     @@all
